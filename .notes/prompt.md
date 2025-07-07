@@ -1,0 +1,2 @@
+przygotuj podsumowanie pliku z kontekstu. wylistuj i krotko opisz najwazniejsze informacje, koncepty, technologie, tipy i ogolnie to co warto wyniesc z takiego materiału. zawrzyj też sekcję ciekawostki i linki (odniesienia do innych stron).
+to ma byc dobre kompedium i podsumowanie z tego materiału.

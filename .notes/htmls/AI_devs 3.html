@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://cloud.overment.com/s01e01-1730807569.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI_devs 3</title>
+	<script src="./AI_devs 3_files/saved_resource"></script>
+	<style>
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --link-color: #8ffa7d;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --link-color: #0066cc;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color) !important;
+}
+
+
+body a {
+  color: var(--link-color);
+}
+		/* Base typography settings */
+.prose {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+/* Links styling */
+.prose a {
+    color: #155e75;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 2px;
+}
+
+/* List styling */
+.prose ul, .prose ol {
+    margin: 1.5em 0;
+    padding-left: 1.5em;
+    font-size: 10pt;    /* Smaller than paragraph text */
+}
+
+.prose li {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+.prose li > ul, 
+.prose li > ol {
+    margin: 0.5em 0;
+}
+
+/* Figure handling */
+.prose figure {
+    margin: 2em auto;
+    text-align: center;
+}
+
+.prose figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+/* Image scaling */
+.prose img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Paragraphs */
+.prose p {
+    margin-bottom: 1.5em;
+    font-size: 11pt;
+}
+	</style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}</style></head>
+<body>
+	<div class="prose">
+		<img src="./AI_devs 3_files/S01E01-1730570331.png"> 
+
+
+<h2>Interakcja z dużym modelem językowym</h2>
+<p>Zdolność dużych modeli językowych do generowania ustrukturyzowanych
+treści umożliwia ich integrację z logiką aplikacji, co pozwala
+programistycznie sterować ich zachowaniem. Na obecnym etapie rozwoju
+pełnią rolę narzędzia, które umożliwia przetwarzanie i generowanie
+danych w sposób dotąd niemożliwy do osiągnięcia programistycznie (np. z
+pomocą wyrażeń regularnych).</p>
+<p>W AI_devs 3 skupimy się na programistycznej interakcji z dużymi
+modelami językowymi poprzez API, budując częściowo-autonomiczne
+narzędzia zwane “Agentami AI”. To złożone rozwiązania wymagające
+praktycznego doświadczenia w programowaniu i dobrego zrozumienia natury
+dużych modeli językowych.</p>
+<p>Narzędzia te mogą realizować najróżniejsze zadania i procesy, ale nie
+są uniwersalne. Dlatego <strong>skupimy się na tworzeniu ich
+indywidualnych komponentów oraz modułów.</strong> W ten sposób możliwe
+będzie ich połączenie w różnych konfiguracjach i dopasowanie do naszych
+potrzeb.</p>
+<p>Jeszcze kilkanaście miesięcy temu wybór modelu ogólnego zastosowania
+praktycznie zaczynał się i kończył na OpenAI. Natomiast dziś pod uwagę
+możemy brać:</p>
+<ul>
+<li>OpenAI: Modele z rodziny o1, GPT, w tym także TTS, Whisper i
+Embedding</li>
+<li>Anthropic: Modele z rodziny Claude (tylko tekst + obraz)</li>
+<li>Vertex AI (Google): Modele Gemini oraz wybranych dostawców (np.
+Anthropic) i inne</li>
+<li><a href="https://accounts.x.ai/">xAI</a>: Modele Grok, które dość
+szybko przebiły się na szczyty rankingów (top10).</li>
+<li>Amazon Bedrock (Amazon): Modele Anthropic, Mistral czy Meta i
+inne</li>
+<li>Azure (Microsoft): Modele OpenAI, Meta i inne</li>
+<li>Groq: Modele Open Source, np. Llama</li>
+<li>a także kilka innych, np.: OpenRouter, Perplexity, Cerebras,
+Databricks, Mistral AI czy Together AI</li>
+</ul>
+<p>Możemy zatem wybierać między różnymi ofertami cenowymi, limitami
+dostępu do API, polityką prywatności i przetwarzania danych, a także
+samymi modelami. Jest to istotne, ponieważ agenci AI będą autonomicznie
+korzystać z naszych baz wiedzy lub uzyskają dostęp do narzędzi. Przełoży
+się to na działanie na dość dużej skali, uwzględniającej przetwarzanie
+nawet dziesiątek milionów tokenów, co generuje zauważalne koszty.
+Obrazuje to poniższy przykład zapytania z prośbą do Agenta AI o
+zapisanie zadań w <a href="https://linear.app/">Linear</a>, co
+przełożyło się na 17,400 tokenów zapytania (input) i 461 tokenów
+odpowiedzi (output). Warto też zwrócić uwagę na czas wykonania
+zapytania, czyli “aż” 24 sekundy.</p>
+<figure>
+<img src="./AI_devs 3_files/aidevs3_usage-c1dee228-3.png" alt="Przykład zapytania do Agenta AI z prośbą o zarządzanie zadaniami obrazuje skalę przetwarzanych tokenów oraz czasu reakcji">
+<figcaption aria-hidden="true">Przykład zapytania do Agenta AI z prośbą
+o zarządzanie zadaniami obrazuje skalę przetwarzanych tokenów oraz czasu
+reakcji</figcaption>
+</figure>
+<p><strong>Jedna wiadomość, kilka podjętych działań, niemal 18 tysięcy
+tokenów i pół minuty na reakcję</strong> — z boku brzmi to, jak
+rozwiązanie, które nie ma sensu. Spójrzmy jednak na nie z nieco innej
+perspektywy.</p>
+<p>Zarządzanie zadaniami <strong>wymaga aktywnego działania ze strony
+osoby</strong> obsługującej urządzenie z aplikacją taką jak Linear,
+Todoist czy ClickUp. Zadanie musi zostać nazwane, opisane, przypisane do
+kategorii, daty, priorytetu czy projektu <strong>— w ten sposób pracuje
+większość z nas.</strong></p>
+<figure>
+<img src="./AI_devs 3_files/aidevs3_human-1e0045b9-1.png" alt="Obsługa aplikacji niemal zawsze wymaga bezpośredniego zaangażowania człowieka, który kontroluje cały proces">
+<figcaption aria-hidden="true">Obsługa aplikacji niemal zawsze wymaga
+bezpośredniego zaangażowania człowieka, który kontroluje cały
+proces</figcaption>
+</figure>
+<p>Proces ten można częściowo zautomatyzować. Przykładowo, możemy za
+pomocą API monitorować skrzynkę e-mail oraz pojawiające się słowa
+kluczowe. Na ich podstawie możliwe jest ustawienie reguł
+przekierowujących wiadomość do wskazanej osoby lub nawet utworzenie
+nowego wpisu w aplikacji do zadań. <strong>Tutaj zaangażowanie człowieka
+nie jest wymagane, lecz potrzebny jest zestaw programistycznie
+zdefiniowanych zasad (co nie zawsze jest możliwe)</strong> — mówimy więc
+tutaj o automatyzacji procesu według ściśle określonych reguł.</p>
+<figure>
+<img src="./AI_devs 3_files/aidevs3_email-641f6178-2.png" alt="Procesy prywatne i biznesowe mogą być automatyzowane według sztywnych reguł, np. dopasowania słów kluczowych">
+<figcaption aria-hidden="true">Procesy prywatne i biznesowe mogą być
+automatyzowane według sztywnych reguł, np. dopasowania słów
+kluczowych</figcaption>
+</figure>
+<p>Teraz do budowy takiego systemu możemy wykorzystać duże modele
+językowe. Dzięki nim możemy przyjmować różne formy treści pochodzące z
+różnych źródeł, ponieważ za ich interpretację oraz podejmowane działania
+odpowiada model połączony z logiką aplikacji.</p>
+<p>Taki system może otrzymywać dane w formie zwykłych wiadomości
+pochodzących od innej osoby, a także poprzez zdjęcia z telefonu,
+nagrania głosowe z zegarka czy wiadomości przesłane na laptopie lub z
+zewnętrznego API. Co więcej, źródłem danych może być nawet <strong>inny
+agent AI!</strong></p>
+<p>W poniższym schemacie widzimy, że wszystkie źródła danych generują
+<strong>zapytanie</strong>, które jest interpretowane przez duży model
+językowy, na podstawie którego generowany jest plan działań i
+podejmowane są akcje.</p>
+<figure>
+<img src="./AI_devs 3_files/aidevs_agent-e32d845c-6.png" alt="Automatyzacja w połączeniu z dużym modelem językowym pozwala na dość swobodne transformowanie różnych formatów treści, a także dynamiczne dostosowanie się do sytuacji">
+<figcaption aria-hidden="true">Automatyzacja w połączeniu z dużym
+modelem językowym pozwala na dość swobodne transformowanie różnych
+formatów treści, a także dynamiczne dostosowanie się do
+sytuacji</figcaption>
+</figure>
+<p>Szczególnie interesujący jest tutaj fakt, że podczas realizowania
+powyższej logiki, możliwe jest dynamiczne uzyskiwanie dostępu do
+informacji. Np. na podstawie wspomnianej nazwy projektu agent może
+wczytać dodatkowe informacje na jego temat, lub pobrać dane z Internetu,
+aby wzbogacić opis. Z kolei w sytuacji, gdy nie będzie w stanie sobie
+poradzić z zadaniem … może poprosić człowieka o pomoc.</p>
+
+<a href="https://bravecourses.circle.so/" target="_blank">&gt;&gt; FILM WIDEO DOSTĘPNY JEST NA PLATFORMIE BRAVE &lt;&lt;</a>
+<script src="./AI_devs 3_files/player.js.download"></script>
+<p>No i właśnie budowaniem takich rozwiązań, będziemy zajmować się przez
+najbliższe tygodnie, zatem — witaj w AI_devs 3!</p>
+<h2 id="połączenie-z-modelem-od-praktycznej-strony">Połączenie z
+modelem, od praktycznej strony</h2>
+<p>Na tym etapie zakładam, że materiały wdrożeniowe do AI_devs 3 masz
+już za sobą lub wracasz do nas z poprzednich edycji. W obu przypadkach
+posiadasz przynajmniej bazową wiedzę na temat modeli językowych. Możemy
+więc przejść do praktycznych przykładów interakcji z modelami.</p>
+<p>Zacznijmy od tego, że domyślnie interakcja z modelem polega na
+budowaniu tablicy <code>messages</code> zawierającej treść konwersacji
+połączoną z instrukcją systemową, czyli format ChatML. Jednak nas
+interesuje kilka dodatkowych kwestii.</p>
+<p>Mianowicie fakt, że na wygenerowanie rezultatu w przypadku Agenta AI
+składa się wiele zapytań i wywołań funkcji. W przykładzie poniżej
+widzimy 4 etapy:</p>
+<ul>
+<li><strong>Zrozumienie:</strong> Wymaga wczytania pamięci i/lub dostępu
+do Internetu. W ten sposób wykraczamy poza bazową wiedzę modelu i
+zyskujemy informacje przydatne na dalszych etapach. Można to określić
+jako etap “zastanawiania się” lub “analizy”.</li>
+<li><strong>Plan działań</strong>: Wymaga połączenia wcześniejszych
+“przemyśleń” połączonych z listą dostępnych narzędzi, umiejętności lub
+innych agentów. Na tej podstawie tworzona jest lista akcji, która ma być
+zrealizowana w dalszych krokach.</li>
+<li><strong>Podejmowanie działań</strong>: Wymaga wiedzy, planu i
+dostępnych umiejętności, na podstawie których model decyduje o kolejnym
+kroku i gromadzi informacje zwrotne.</li>
+<li><strong>Odpowiedź</strong>: Wymaga wiedzy oraz raportu z działań w
+celu wygenerowania ostatecznej odpowiedzi.</li>
+</ul>
+<p><img src="./AI_devs 3_files/aidevs3_plan-f0b12e52-d.png"></p>
+<p>Już na tym etapie trzeba mieć na uwadze to, że powyższa interakcja,
+<strong>nie musi uwzględniać zaangażowania ze strony człowieka</strong>
+i może być realizowana “w tle” oraz trwać od kilku sekund do nawet kilku
+godzin. Może też być uruchamiana automatycznie według harmonogramu lub
+zewnętrznego zdarzenia.</p>
+<p>Widzimy też wyraźnie, że nie mówimy tutaj już o prostym budowaniu
+konwersacji przez tablicę <code>messages</code>, lecz nowej
+architekturze i wzorcach projektowania aplikacji. Co ciekawe, jest to
+programowanie które w ~80% przypomina klasyczne aplikacje, a LLM,
+Prompty czy narzędzia takie jak bazy wektorowe stanowią jedynie pewną
+część. Natomiast poza samym kodowaniem, zdecydowanie większą rolę
+odgrywa praca z danymi, różnymi formatami plików, organizacją baz danych
+czy strategiami wyszukiwania (tzw. retrieval).</p>
+<p>Wracając jednak do prowadzenia interakcji z modelem, to w przykładzie
+<a href="https://github.com/i-am-alice/3rd-devs/tree/main/thread"><code>thread</code></a>
+widzimy dość nietypowy, aczkolwiek bardzo przydatny sposób prowadzenia
+konwersacji. Zamiast każdorazowo przesyłać całą historię wiadomości do
+modelu, to stosujemy <strong>podsumowanie</strong> oraz jedynie
+<strong>najnowszą wiadomość użytkownika</strong>. Dzięki temu, nie
+potrzebujemy kompletnej konwersacji, aby model zapamiętał kluczowe
+informacje takie jak imię użytkownika.</p>
+<p>Aby uruchomić ten przykład, włącz serwer poleceniem
+<code>bun thread</code> i wykonaj zapytanie POST na adres
+<code>localhost:3000/api/demo</code>.</p>
+<p><img src="./AI_devs 3_files/aidevs3_thread-676ee978-b.png"></p>
+<p>Schemat tej interakcji wygląda następująco: po udzieleniu pierwszej
+odpowiedzi generowane jest podsumowanie dotychczasowej rozmowy, które
+jest dołączane do promptu systemowego kolejnej tury. W ten sposób
+przekazujemy “skompresowany” wątek.</p>
+<p><img src="./AI_devs 3_files/aidevs3_turns-faccf75e-d.png"></p>
+<p>W wyniku takiej kompresji naturalnie tracimy część informacji. Nic
+jednak nie stoi na przeszkodzie, aby dodać mechanizm przeszukiwania
+wcześniejszych wątków na wypadek, gdyby podsumowanie było
+niewystarczające.</p>
+<p>Przykład <a href="https://github.com/i-am-alice/3rd-devs/tree/main/thread"><code>thread</code></a>
+jest prosty, jednak doskonale obrazuje to, jak możemy manipulować
+przebiegiem konwersacji, a w rezultacie:</p>
+<ul>
+<li>Fakt, że do podsumowania zastosowaliśmy tańszy model, jest
+przykładem <strong>optymalizacji kosztów</strong></li>
+<li>Dzięki podsumowaniu model przetwarza mniejszą ilość treści,
+<strong>przez co jego uwaga jest bardziej skupiona na aktualnym
+zadaniu</strong> — <strong>WAŻNE!</strong> w modelach klasy GPT-4o jest
+to bardzo istotna kwestia, wpływająca na skuteczność działania
+modelu</li>
+<li>Podsumowanie pozwala także uniknąć limitu okna kontekstu, co ma
+znaczenie w przypadku modeli Open Source, które mogą odpowiadać za
+wybrany element interakcji (np. anonimizację)</li>
+<li>Podsumowanie może być również wykorzystane w innych częściach logiki
+agenta, a także jako element interfejsu użytkownika lub raportu pracy
+agent</li>
+<li>W tym przypadku zastosowaliśmy podsumowanie, jednak ten sam schemat
+będziemy stosować np. przy rozpoznawaniu obrazu, dźwięku czy wideo. Tam
+również dodatkowe zapytania do modelu będą wykorzystywane jako kontekst
+promptu systemowego ## Rodzaje interakcji</li>
+</ul>
+<p>Złożona logika agentów składa się z modułów oraz pojedynczych akcji.
+Trudno mówić o dobrze działającym systemie, jeśli nie zadbamy o detale
+zarówno po stronie promptów, jak i po stronie kodu. Dlatego na tym
+etapie przejdziemy przez kilka przykładów elementarnych akcji, takich
+jak podejmowanie decyzji, klasyfikacja, parsowanie, transformacja i
+ocena. Wykorzystamy także narzędzie PromptFoo, którego uruchomienie
+omówiłem w lekcji S00E02 — Prompt Engineering i o którym będziemy
+jeszcze mówić w dalszych lekcjach, a aktualnie wystarczy nam jego
+uruchomienie.</p>
+<p>Przykładem pojedynczej akcji, może być <strong>podejmowanie
+decyzji</strong> przez model na podstawie dostępnych danych. Można to
+porównać do instrukcji warunkowej <code>if</code> lub
+<code>switch</code>. Różnica polega na elastyczności, kosztem
+deterministycznego rezultatu.</p>
+<p>Poniższy scenariusz prezentuje logikę sprawdzającą czy do danego
+zapytania potrzebujemy skorzystać z wyszukiwarki internetowej. W
+pierwszej chwili taki scenariusz sugeruje zastosowanie Function Calling
+/ Tool Use. Nie zawsze jednak będzie to oczywiste.</p>
+<p><img src="./AI_devs 3_files/aidevs3_decision-a25871ac-c.png"></p>
+<p>Mianowicie zakładamy tutaj, że natychmiast mamy komplet niezbędnych
+informacji potrzebnych do uruchomienia wyszukiwania, co zwykle nie jest
+prawdą. Połączenie np. z FireCrawl może wymagać pobrania listy
+dopuszczalnych domen, czy wygenerowania słów kluczowych na podstawie
+dodatkowego kontekstu wczytywanego z bazy danych.</p>
+<p>W przykładzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/use_search"><code>use search</code></a>
+(wymaga zainstalowanego PromptFoo), mamy prompt odpowiadający za
+podejmowanie decyzji o zastosowaniu wyszukiwarki. Jego zadaniem jest
+wygenerowanie <code>0</code> lub <code>1</code> w celu klasyfikacji
+zapytania. Z tego powodu uwzględniłem w nim przykłady Few-Shot oraz
+zdefiniowałem zestaw zasad dopasowany do początkowych założeń. Następnie
+działanie takiego promptu jest automatycznie weryfikowane na
+kilkudziesięciu przykładach.</p>
+<p><img src="./AI_devs 3_files/aidevs3_promptfoo-09e8b046-b.png"></p>
+<p>Podejmowanie decyzji przez LLM może uwzględniać potrzebę wybrania
+wielu opcji, a nie tylko jednej. Wówczas mówimy o klasyfikacji
+zapytania. Skoro jesteśmy już przy przeszukiwaniu Internetu, to pomocny
+będzie także prompt wybierający domeny, do których zawęzimy
+wyszukiwanie. Jest to przydatne, ponieważ autonomiczne przeglądanie
+stron www szybko prowadzi do niskiej jakości źródeł czy serwisów, które
+wymagają logowania lub blokują dostęp do treści.</p>
+<p>Warto więc wypisać sobie listę adresów i opisać je tak, aby LLM mógł
+zdecydować kiedy je uwzględnić, a kiedy nie. Prompt realizujący to
+zadanie znajduje się w przykładzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/pick_domains"><code>pick_domains</code></a>.</p>
+<p><img src="./AI_devs 3_files/aidevs3_domains-08f186d6-5.png"></p>
+<p>W powyższym prompcie, w celu zwiększenia skuteczności, zastosowaliśmy
+także wariant Thought Generation, a konkretnie “zero-shot chain of
+thought”. Mówimy tutaj o podniesieniu skuteczności, ponieważ w ten
+sposób dajemy LLM “czas na myślenie”, które domyślnie widoczne jest w
+modelach <code>o1</code>. Dodatkowo fakt, że właściwość “_thoughts” jest
+generowana na początku, jest powiązany z faktem, że modele językowe są
+obecnie autoregresyjne i treść tej pierwszej właściwości wpływa na treść
+kolejnych — zwiększając w ten sposób prawdopodobieństwo uzyskania
+oczekiwanych rezultatów.</p>
+<p>Pozostając w temacie przeszukiwania Internetu, jesteśmy gotowi na
+wykonanie zapytania do wyszukiwarki. Jednak na tym etapie możemy uzyskać
+jedynie wyniki w formacie znanym z Google czy DuckDuckGo. Oznacza to, że
+nie będą to wystarczające informacje do udzielenia finalnej odpowiedzi,
+ale możemy na ich podstawie wskazać strony, które będziemy chcieli
+wczytać.</p>
+<p>W przykładzie <code>rate</code> znajduje się prompt oceniający to,
+czy zwrócony wynik może zawierać interesujące nas informacje. Na
+podstawie zwróconych ocen wybierzemy te strony, których zawartość
+będziemy chcieli wczytać z pomocą np. FireCrawl.</p>
+<figure>
+<img src="./AI_devs 3_files/aidevs_rate-7364bbb1-3.png" alt="Automatyczny test promptu oceniającego to, jak istotny jest context z punktu widzenia zapytania">
+<figcaption aria-hidden="true">Automatyczny test promptu oceniającego
+to, jak istotny jest context z punktu widzenia zapytania</figcaption>
+</figure>
+<p>Zbierając to w całość, mamy już:</p>
+<ul>
+<li>Decyzję o tym czy wyszukiwarka internetu jest potrzebna</li>
+<li>Decyzję o tym, jakie zapytania chcemy do niej skierować</li>
+<li>Możliwość filtrowania zwróconych wyników</li>
+</ul>
+<p>Pozostaje nam więc już tylko wygenerowanie odpowiedzi na oryginalne
+pytanie na podstawie pobranych danych. Zobaczmy, jak możemy to wszystko
+połączyć w całość w przykładzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>.
+Jego logika umożliwia zwykłą rozmowę z LLM, ale gdy wykryta zostanie
+konieczność skorzystania z wyszukiwarki, oryginalne zapytanie
+użytkownika zostaje wykorzystane do przeszukiwania sieci, co zresztą
+można zobaczyć na poniższym filmie.</p>
+
+<a href="https://bravecourses.circle.so/" target="_blank">&gt;&gt; FILM WIDEO DOSTĘPNY JEST NA PLATFORMIE BRAVE &lt;&lt;</a>
+
+<script src="./AI_devs 3_files/player.js.download"></script>
+<figure>
+<img src="./AI_devs 3_files/aidevs3_websearch-f14ad4e3-1.png" alt="Przykład kodu łączącego duży model z wyszukiwarką internetową">
+<figcaption aria-hidden="true">Przykład kodu łączącego duży model z
+wyszukiwarką internetową</figcaption>
+</figure>
+<h2 id="architektura-aplikacji">Architektura aplikacji</h2>
+<p>Patrząc nawet na przykład <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>,
+można zauważyć, że faktycznie ~80% kodu przypomina klasyczną aplikację.
+Jednak zgodnie z tym, co omawialiśmy w lekcji S00E04 — Programowanie, w
+kodzie zaczyna pojawiać się język naturalny oraz elementy, które do tej
+pory mogły odgrywać nieco mniejszą rolę w zależności od projektu.</p>
+<p>Poza strukturą katalogów, podziałem odpowiedzialności, architekturą
+bazy danych czy samym stackiem technologicznym, pod uwagę musimy wziąć
+także rolę dużych modeli językowych oraz promptów. Nie chodzi tutaj
+wyłącznie o wybór modelu, hostingu czy napisaniu instrukcji, ale przede
+wszystkim o sposób przepływu danych.</p>
+<p>Jeśli spojrzymy teraz na wizualizację przykładu <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>,
+to jasno widzimy, że działanie kolejnych promptów jest uzależnione od
+rezultatów poprzednich. Choć każdy z nich budujemy indywidualnie, to
+robiąc to, musimy brać pod uwagę dane na których będzie pracować, oraz
+to w jaki sposób generowane przez niego dane będą wykorzystane
+później.</p>
+<p><img src="./AI_devs 3_files/aidevs3_graph-f6782902-9.png"></p>
+<p>Nieco bardziej rozbudowana wizualizacja pokazuje te zależności nieco
+wyraźniej. I tak nie jest to wszystko, bo mamy tutaj do czynienia z
+łańcuchem promptów i akcjami następującymi po sobie, a nie zawsze tak
+będzie.</p>
+<p><img src="./AI_devs 3_files/aidevs3_advanced-734782e6-2.png"></p>
+<p>Na blogu LangChain można przeczytać <a href="https://blog.langchain.dev/what-is-a-cognitive-architecture/">o
+podstawach architektury kognitywnej</a>, gdzie uwzględniony jest podział
+na Code, LLM Call, Chain, Router, a także State Machine i w pełni
+autonomiczne systemy o których będziemy jeszcze mówić.</p>
+<p><img src="./AI_devs 3_files/xnapper-2024-09-05-09.56.29-f389615d-4.png"></p>
+<p>Tymczasem spróbujmy spojrzeć na to z szerokiej perspektywy,
+uwzględniając elementy, które w tej chwili pominęliśmy w celu uniknięcia
+dużej złożoności.</p>
+<ul>
+<li><strong>Baza danych (np. PostgreSQL):</strong> teraz nie tylko
+historia konwersacji rozpoczyna się za każdym razem od nowa. Treść
+wyników wyszukiwania oraz zawartość wczytanych stron również znikają po
+zakończeniu żądania. Zatem jeśli w kolejnej wiadomości użytkownik zada
+pytanie pogłębiające, będziemy musieli ponownie wczytywać te same dane.
+Widzimy więc, że <strong>będziemy chcieli zapisać zarówno historię
+rozmowy, jak i kontekst wykorzystany do ich generowania</strong>. Ogólny
+mechanizm widoczny jest we wcześniejszym przykładzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/thread"><code>thread</code></a>,
+ale uwzględniał on wyłącznie treść rozmowy, bez dodatkowego
+kontekstu</li>
+<li><strong>Silnik wyszukiwania (np. Qdrant):</strong> zapisując
+wspomniane dane, szybko dojdziemy do momentu gdy wczytanie ich
+wszystkich do kontekstu stanie się nieopłacalne lub wprost niemożliwe.
+Wówczas kluczowe będzie ich skuteczne odszukiwanie. Musimy zatem
+pomyśleć o tym, jak je skutecznie zorganizować i opisać, a potem
+przeszukiwać oraz przekazywać do modelu.</li>
+<li><strong>Zarządzanie stanem</strong>: podobnie jak w przypadku
+klasycznych aplikacji, tutaj także do gry wchodzi zarządzanie stanem.
+Jednak tutaj przechowywane dane będą obejmować historię promptów czy
+historię uruchomionych narzędzi wraz z informacją zwrotną.</li>
+<li><strong>API:</strong> w przypadku <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+mamy do czynienia tylko z dwoma narzędziami (web search i web
+scrapping), jednak zwykle będzie ich znacznie więcej. Każde z nich musi
+zostać zbudowane tak, aby LLM mógł się nim posługiwać, rozumieć
+odpowiedzi oraz obsługiwać błędy</li>
+<li><strong>Ewaluacja promptów</strong>: Patrząc na powyższy schemat,
+staje się jasne, dlaczego wcześniej przechodziliśmy przez PromptFoo oraz
+dlaczego będziemy modyfikować prompty, testując je automatycznie na
+wybranych zestawach testowych.</li>
+<li><strong>Wersjonowanie i kopie zapasowe:</strong> wersjonowanie
+odnosi się już nie tylko do historii kodu oraz promptów, lecz także do
+zmian wprowadzanych przez model. Przykładowo, agent zarządzający listą
+zadań może przypadkowo zmodyfikować wpisy, których nie chcemy edytować,
+i musimy mieć łatwy sposób ich przywrócenia.</li>
+<li><strong>Kontrola uprawnień</strong>: w przykładzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+programistycznie ograniczyłem listę domen z którymi LLM może się
+skontaktować. W podobny sposób będziemy określać uprawnienia modelu w
+celu zwiększenia stabilności aplikacji.</li>
+<li><strong>Monitorowanie aplikacji:</strong> w przykładzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+historię wykonanych zapytań zapisałem w pliku markdown. Naturalnie, nie
+będzie to wystarczające w produkcyjnych aplikacjach, gdzie będziemy
+korzystać z LangFuse czy podobnych rozwiązań do zaawansowanego
+monitorowania.</li>
+<li><strong>Asynchroniczność:</strong> narzędzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+pokazuje, że LLM może działać w tle, co wydłuża czas reakcji. W takim
+przypadku sensowne jest uruchamianie skryptu “w tle” lub utworzenie
+kolejki, po której wykonaniu użytkownik otrzyma powiadomienie lub e-mail
+z informacją o zakończeniu zadania.</li>
+<li><strong>Interfejs:</strong> narzędzie <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+może być wykorzystane w interfejsie czatu, co pokazałem na filmie.
+Jednak równie dobrze mógłby to być formularz umożliwiający dodanie listy
+adresów oraz związane z nimi zadania (np. “pobierz najnowszy artykuł”)
+wraz z harmonogramem uruchomienia.</li>
+</ul>
+<p>Wszystkimi z wyżej wymienionych punktów będziemy zajmować się w
+dalszych lekcjach, ale nie wszystkie będą wymagane za każdym razem.
+Będziemy tworzyć zarówno proste narzędzia odpowiedzialne za
+nieskomplikowane akcje, jak i rozbudowane rozwiązania wspierające
+złożone procesy.</p>
+<h2 id="optymalizacja-skuteczności">Optymalizacja skuteczności</h2>
+<p>Instrukcje z przykładów <a href="https://github.com/i-am-alice/3rd-devs/tree/main/pick_domains"><code>pick_domains</code></a>,
+<a href="https://github.com/i-am-alice/3rd-devs/tree/main/use_search"><code>use_search</code></a>
+czy <a href="https://github.com/i-am-alice/3rd-devs/tree/main/rate"><code>rate</code></a>
+zawierają od kilku do kilkunastu przykładów Few-Shot. W niektórych
+przypadkach może być ich nawet kilkadziesiąt czy kilkaset i wówczas
+mówimy o “in-context learningu w oparciu o przykłady ‘many-shot’” o
+których możemy przeczytać w <a href="https://arxiv.org/abs/2404.11018">Many-Shot In Context
+Learning</a>.</p>
+<p><img src="./AI_devs 3_files/aidevs3_manyshot-4edd19f3-b.png"></p>
+<p>Uwzględnienie przykładów jest pierwszą techniką, którą powinniśmy
+brać pod uwagę przy optymalizacji skuteczności promptu. Poprzez
+prezentowanie oczekiwanego zachowania w ten sposób, możemy wzmocnić
+treść głównej instrukcji.</p>
+<p>Samym projektowaniem przykładów będziemy zajmować się w dalszych
+lekcjach, natomiast na teraz musisz wiedzieć, że:</p>
+<ul>
+<li>Przykłady zwykle mają formę par prezentujących dane wejściowe
+(wiadomość użytkownika) oraz dane wyjściowe (odpowiedź modelu)</li>
+<li>Liczba przykładów zwykle nie przekracza ~3 - 40 par</li>
+<li>Przykłady powinny prezentować oczekiwane zachowanie i być
+zróżnicowane oraz uwzględniać sytuacje brzegowe (np. takie w których
+zachowanie modelu ma być inne niż oczekiwane)</li>
+<li>Przykłady muszą być dobrane starannie, lecz do ich generowania
+możemy wykorzystać pomoc ze strony modelu</li>
+<li>Przykłady docelowo mogą być wykorzystane na potrzeby Fine-Tuning, a
+ich warianty na potrzeby automatycznych testów</li>
+<li>Duża liczba przykładów może być połączona <a href="https://www.anthropic.com/news/prompt-caching">z mechanizmem
+cache’owania</a> w celu optymalizacji kosztów oraz wydajności</li>
+</ul>
+<p>Technikami dobierania przykładów i pracy z nimi, będziemy zajmować
+się w dalszej części AI_devs 3. Tymczasem Few-Shot możesz zapamiętać
+jako nieodłączny element praktycznie każdego promptu. ## Podstawy
+pamięci długoterminowej</p>
+<p>Wczytywanie treści z wyszukiwarki oraz stron www do promptu w celu
+odpowiadania na pytania na ich podstawie to przykład Retrieval-Augmented
+Generation. Tutaj z pomocą FireCrawl rozszerzyliśmy bazową wiedzę modelu
+dokładnie w taki sposób, jak będziemy robić to w przypadku baz wiedzy
+czy pamięci tymczasowej oraz długoterminowej agenta. Jest to
+prawdopodobnie znany Ci już schemat, widoczny poniżej, w którym
+wskazujemy modelowi treść, którą ma wykorzystać przy generowaniu
+odpowiedzi.</p>
+<p><img src="./AI_devs 3_files/aidevs3_rag-1d9ef809-b.png"></p>
+<p>Analogicznie będziemy wczytywać dane z plików, baz danych czy
+zewnętrznych usług. Przykład <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+pokazał nam jednak, że na odszukanie informacji będzie składać się
+szereg dodatkowych kroków, związanych z parafrazą zapytania,
+generowaniem dodatkowych zapytań (tzw. Self-Querying), ocenianiem
+wyników (tzw. Re-rank) i ich filtrowaniem.</p>
+<p>Należy mieć tutaj na uwadze fakt, że podłączanie zewnętrznych źródeł
+wiedzy do naszego systemu może mieć bardzo negatywny wpływ na jego
+działanie. To właśnie z tego powodu ograniczyłem listę domen dla
+FireCrawl, ale takich sytuacji jest więcej. Chociażby wczytywanie
+dokumentu PDF może wiązać się z utratą formatowania, co zaburzy
+zrozumienie jego zawartości.</p>
+<p>Problemy z formatowaniem to także nie wszystko, ponieważ stale musimy
+mieć na uwadze ograniczoną wiedzę LLM na temat naszego kontekstu.
+Przykładowo jeśli powiemy “Zapamiętaj, że overment to mój nickname”, to
+system powinien zapamiętać “Nickname Adama to overment”. W przeciwnym
+razie w przyszłości może uznać, że ‘overment’ to jego nickname, czego
+przykład mamy poniżej.</p>
+<p><img src="./AI_devs 3_files/aidevs3_nickname-b04b7bd3-c.png"></p>
+<p>O pamięci długoterminowej dla modelu będziemy jeszcze mówić w module
+trzecim AI_devs 3. Na ten moment zapamiętaj, że:</p>
+<ul>
+<li>Jakość wypowiedzi modelu zależy od promptu, ale także od
+dostarczonych danych</li>
+<li>Instrukcja powinna zawierać informacje na temat tego, jak model
+powinien wykorzystywać kontekst w swoich wypowiedziach</li>
+<li>Jeden prompt może zawierać wiele zewnętrznych kontekstów, jednak
+powinny być one wyraźnie od siebie oddzielone</li>
+<li>Model powinien posiadać instrukcję u zachowaniu w sytuacji, gdy
+dostarczony kontekst jest niewystarczający do udzielenia odpowiedzi</li>
+<li>Musimy zadbać nie tylko o jakość źródeł dostarczanych informacji,
+ale także o sposób ich przechowania i dostarczenia do modelu. Wspomniana
+wyżej parafraza wspomnienia pokazuje, że zawsze musimy zadawać sobie
+pytanie: <strong>Jak model będzie wykorzystywać dostarczoną
+wiedzę?</strong></li>
+</ul>
+<h2 id="podsumowanie">Podsumowanie</h2>
+<p>Niniejsza lekcja to przedsmak tego, czym będziemy zajmować się w
+nadchodzących tygodniach. Jej celem było pokazanie szerokiej perspektywy
+na temat aplikacji wykorzystujących LLM, a przede wszystkim tego, że w
+dużym stopniu są one budowane tak samo, jak oprogramowanie, które
+tworzymy na co dzień.</p>
+<p>To właśnie z tego powodu, jednym z wymagań AI_devs 3 była znajomość
+przynajmniej jednego języka programowania. Co prawda nie wszystkie z
+omawianych elementów będziemy wdrażać samodzielnie i nie musimy posiadać
+doświadczenia w budowie baz danych czy optymalizacji silników
+wyszukiwania. Pomimo tego w nadchodzących tygodniach będziemy mieć
+kontakt z najróżniejszymi zagadnieniami, które mogą być dla Ciebie
+zupełnie nowe. Potraktuj to więc jako możliwość doświadczenia szerokiej
+perspektywy rozwoju aplikacji, a najwięcej uwagi skieruj na obszary,
+które Ciebie dotyczą (np. front-end, back-end czy bazy danych).</p>
+<p>Po dzisiejszej lekcji spróbuj przynajmniej uruchomić przykład <a href="https://github.com/i-am-alice/3rd-devs/tree/main/websearch"><code>websearch</code></a>
+i zadać mu kilka pytań w celu sprawdzenia jak się w nich odnajduje.
+Istnieje dość duże prawdopodobieństwo, że nie odpowie skutecznie na
+Twoje pytania — zastanów się wtedy dlaczego tak się dzieje. Przejdź
+przez prompty z pliku <code>prompts.ts</code> oraz sprawdź jak
+skutecznie FireCrawl radzi sobie z wczytywaniem treści stron, z którymi
+chcesz pracować.</p>
+<p>Możesz także poświęcić chwilę na pracę z PromptFoo, którego
+podstawową konfigurację omawiałem w materiale wdrożeniowym i lekcji
+S00E02 — Prompt Engineering. Do pracy z tym narzędziem wykorzystaj
+Cursor IDE z wczytaną dokumentacją, co ułatwi generowanie plików
+konfiguracyjnych oraz szybsze zrozumienie tego rozwiązania.</p>
+<p>Zamykając klamrą dzisiejszą lekcję, to już na tym etapie powinno być
+dla Ciebie zrozumiałe to, że LLM w kodzie aplikacji pozwala na sprawne
+przetwarzanie języka naturalnego, a także różnych formatów danych (np.
+audio czy obrazu). Daje to nam nowe możliwości, ale nadal fundamentem
+rozwoju aplikacji pozostaje Twoja wiedza oraz doświadczenie.</p>
+	</div>
+
+</body></html>
