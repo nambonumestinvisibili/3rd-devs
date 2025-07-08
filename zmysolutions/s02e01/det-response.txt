@@ -1,0 +1,66 @@
+{
+    "id": "resp_68699179bac08199b4efa9e7bbeef5be0476efbf81dfca02",
+    "created_at": 1751748985.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "o4-mini-2025-04-16",
+    "object": "response",
+    "output": [
+        {
+            "id": "rs_6869917a3c808199b0e3b7dc1326e30a0476efbf81dfca02",
+            "summary": [],
+            "type": "reasoning"
+        },
+        {
+            "id": "msg_686991912f6c8199a00a2d977058d3a90476efbf81dfca02",
+            "content": [
+                {
+                    "annotations": [],
+                    "text": "ul. Nawojki 11\n\n- Monika m\u00f3wi o Krakowie i Instytucie Informatyki i Matematyki Komputerowej, gdzie Maj wyk\u0142ada\u0142 sieci neuronowe.  \n- Agnieszka potwierdza, \u017ce Maj przeni\u00f3s\u0142 si\u0119 do Krakowa, by wyk\u0142ada\u0107 informatyk\u0119/matematyk\u0119.  \n- Micha\u0142 wspomina, \u017ce po epizodzie w Warszawie trafi\u0142 wreszcie na renomowan\u0105 uczelni\u0119.  \n- W Krakowie jedynym instytutem spe\u0142niaj\u0105cym te kryteria jest Instytut Informatyki UJ (Wydzia\u0142 Matematyki i Informatyki) mieszcz\u0105cy si\u0119 przy ul. Nawojki 11.  \n- Ulica Nawojki to adres instytutu, nie g\u0142\u00f3wnej siedziby uniwersytetu (Go\u0142\u0119bia 24).",
+                    "type": "output_text",
+                    "logprobs": []
+                }
+            ],
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+        }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "max_output_tokens": null,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "reasoning": {
+        "effort": "medium",
+        "summary": null
+    },
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+        "format": {
+            "type": "text"
+        }
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+        "input_tokens": 2327,
+        "input_tokens_details": {
+            "cached_tokens": 0
+        },
+        "output_tokens": 3078,
+        "output_tokens_details": {
+            "reasoning_tokens": 2880
+        },
+        "total_tokens": 5405
+    },
+    "user": null,
+    "store": true
+}
