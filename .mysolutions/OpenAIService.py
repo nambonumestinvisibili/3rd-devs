@@ -1,8 +1,17 @@
-
+import base64
 import openai
 import globals
 
-class OpenAiService:        
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
+    
+def read_prompt(prompt_path):
+    with open(prompt_path, "r") as file:
+        prompt_text = file.read()
+    return prompt_text
+
+class OpenAiService:    
     def get_openai_completion(prompt, model="o4-mini", max_tokens=100, temperature=0.7):
         try:
             client = openai.OpenAI(
@@ -19,6 +28,26 @@ class OpenAiService:
         except Exception as e:
             print(f"An error occurred while getting OpenAI completion: {e}")
     
+class PromptBuilder:
+    def create_image_content(image_path):
+        base64_image = encode_image(image_path)
+        return {
+            "type": "input_image",
+            "image_url": f"data:image/jpeg;base64,{base64_image}"
+        }
+    
+    def create_text_content(text):
+        return {
+            "type": "input_text",
+            "text": text
+        }
+    
+    def create_prompt(content):
+        return [content]
+    
+    def create_user_message(content):
+        return { "role": "user", "content": [*content] }
+
 
 
 import requests

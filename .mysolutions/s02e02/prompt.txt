@@ -1,0 +1,18 @@
+<goal>
+Your goal is to deduct what cities are those fragments of a map from.
+<goal>
+
+<format>
+Answer should be in the following format:
+{
+  "_thoughts" : "Here you provide your reasoning",
+  "answer:" "CITY_NAME"
+}
+</format>
+
+<instructions>
+- there are 4 pictures.
+- one of the pictures might be to cause confusion - it might be taken from another city.
+- identiy the city by streets, characteristic objetcs (like cemeteries, churches) and the urbanistical structure.
+- make sure that locations that you recognize on those maps can in fact be found in the city you want to answer with.
+</instructions>
