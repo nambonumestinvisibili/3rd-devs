@@ -124,9 +124,18 @@ class HttpService:
     @staticmethod
     def send_get_request(url, params=None):
         try:
-            response = requests.get(url, params=params)
+            url = url.format(apikey=globals.aidevs_api_key)
+            response = requests.get(url, params=params, headers={"Accept": "application/json"})
             response.raise_for_status()  # Raise an HTTPError for bad responses
-            return response.text  # Return the text response
+            response.encoding = 'utf-8'  # Ensure the response is decoded using UTF-8
+            # Try to decode JSON and pretty-print if possible
+            try:
+                json_data = response.json()
+                print(json.dumps(json_data, ensure_ascii=False, indent=2))
+                return json_data
+            except ValueError:
+                print(response.text)
+                return response.text
         except requests.exceptions.RequestException as e:
             print(f"An error occurred: {e}")
             return None
