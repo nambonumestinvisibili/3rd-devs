@@ -1,0 +1,9 @@
+Your goal is to OCR the texts in every image in this prompt. Be very precise.
+The response should be as below:
+[
+  {
+    "filename: "filename1",
+    "text": "ocr-ed text"
+  },
+  ...
+]

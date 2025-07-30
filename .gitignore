@@ -227,4 +227,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-zmysolutions/__pycache__/globals.cpython-313.pyc
+.mysolutions/__pycache__/globals.cpython-313.pyc
+.mysolutions/s02e04/data/

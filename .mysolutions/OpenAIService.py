@@ -42,6 +42,12 @@ class PromptBuilder:
             "text": text
         }
     
+    def create_audio_content(text):
+        return {
+            "type": "input_text",
+            "text": text
+        }
+    
     def create_prompt(content):
         return [content]
     
