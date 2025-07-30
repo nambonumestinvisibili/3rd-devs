@@ -1,0 +1,152 @@
+[
+  {
+    "filename": "f01.txt",
+    "keywords": [
+      "Sektor C",
+      "obszar",
+      "fabryka",
+      "broń",
+      "bezpieczeństwo",
+      "materiał niebezpieczny",
+      "eksplozja",
+      "stanowisko testowe",
+      "osłona przeciwodłamkowa",
+      "monitoring",
+      "technik",
+      "inżynier",
+      "archiwizacja",
+      "raport"
+    ]
+  },
+  {
+    "filename": "f02.txt",
+    "keywords": [
+      "Sektor A",
+      "montaż",
+      "robot przemysłowy",
+      "jednostka wojskowa",
+      "linia produkcyjna",
+      "strefa",
+      "kontrola jakości",
+      "sztuczna inteligencja",
+      "egzoszkielet",
+      "system monitoringu",
+      "system biometryczny",
+      "technik"
+    ]
+  },
+  {
+    "filename": "f03.txt",
+    "keywords": [
+      "Sektor B",
+      "badania",
+      "ogniwo bateryjne",
+      "wydajność energetyczna",
+      "laboratorium",
+      "aparat diagnostyczny",
+      "skład chemiczny",
+      "bezpieczeństwo",
+      "komora",
+      "test",
+      "sztuczna inteligencja",
+      "archiwizacja"
+    ]
+  },
+  {
+    "filename": "f04.txt",
+    "keywords": [
+      "Aleksander Ragowski",
+      "nauczyciel",
+      "szkoła podstawowa",
+      "automatyzacja",
+      "rząd robotów",
+      "spotkanie",
+      "algorytm",
+      "sztuczna inteligencja",
+      "aresztowanie",
+      "ucieczka",
+      "programowanie",
+      "Java"
+    ]
+  },
+  {
+    "filename": "f05.txt",
+    "keywords": [
+      "Barbara Zawadzka",
+      "frontend development",
+      "branża IT",
+      "automatyzacja",
+      "ruch oporu",
+      "JavaScript",
+      "Python",
+      "sztuczna inteligencja",
+      "baza wektorowa",
+      "krav maga",
+      "broń palna",
+      "koktajl Mołotowa",
+      "pizza z ananasem"
+    ]
+  },
+  {
+    "filename": "f06.txt",
+    "keywords": [
+      "Azazel",
+      "podróż w czasie",
+      "podróż w przestrzeni",
+      "technologia",
+      "system operacyjny",
+      "robot",
+      "maszyna przemysłowa",
+      "teleportacja",
+      "eksperyment",
+      "tajemnica"
+    ]
+  },
+  {
+    "filename": "f07.txt",
+    "keywords": [
+      "Rafał Bomba",
+      "laboratorium",
+      "profesor Andrzej Maj",
+      "podróż w czasie",
+      "sztuczna inteligencja",
+      "nanotechnologia",
+      "zniknięcie",
+      "tożsamość",
+      "zaburzenie psychiczne",
+      "paranoja",
+      "ośrodek psychiatryczny"
+    ]
+  },
+  {
+    "filename": "f08.txt",
+    "keywords": [
+      "Adam Gospodarczyk",
+      "ruch oporu",
+      "programowanie",
+      "rekrutacja",
+      "kod",
+      "hackowanie",
+      "Azazel",
+      "agent",
+      "sztuczna inteligencja",
+      "szkolenie",
+      "opozycja"
+    ]
+  },
+  {
+    "filename": "f09.txt",
+    "keywords": [
+      "Sektor D",
+      "magazyn",
+      "komponent",
+      "robot",
+      "surowiec",
+      "produkcja",
+      "monitoring",
+      "alarm",
+      "magazynowanie",
+      "przekształcenie"
+    ]
+  }
+]

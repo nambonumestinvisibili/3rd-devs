@@ -229,3 +229,4 @@ __marimo__/
 .streamlit/secrets.toml
 .mysolutions/__pycache__/globals.cpython-313.pyc
 .mysolutions/s02e04/data/
+data/

@@ -1,0 +1,68 @@
+{
+  "id": "resp_6889f237d79c81998fd0725b647bf84b0c017a9c142a8978",
+  "created_at": 1753870903.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o4-mini-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_6889f23897f081998833a16360cb95c20c017a9c142a8978",
+      "summary": [],
+      "type": "reasoning"
+    },
+    {
+      "id": "msg_6889f23b07ac8199b3ce9cb36f7b8e360c017a9c142a8978",
+      "content": [
+        {
+          "annotations": [],
+          "text": "Proszę udostępnić listę faktów w formacie JSON, abym mógł wyekstrahować z niej słowa kluczowe zgodnie z podanymi regułami.",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "summary": null
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 116,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 306,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 422
+  },
+  "user": null,
+  "prompt_cache_key": null,
+  "safety_identifier": null,
+  "store": true
+}
