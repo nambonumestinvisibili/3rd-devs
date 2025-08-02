@@ -19,6 +19,16 @@ def read_json(json_path_of_calling_file, json_filename):
     with open(loc, "r", encoding='utf-8') as file:
         return json.load(file)
 
+def read_file(file_path_of_calling_file, filename, mode='r', encoding='utf-8'):
+    loc = Path(file_path_of_calling_file).parent / filename
+    print(loc)
+    if 'b' in mode:
+        with open(loc, mode) as file:
+            return file.read()
+    else:
+        with open(loc, mode, encoding=encoding) as file:
+            return file.read()
+
 class FileLocation:
     def __init__(self, magic_file, filename):
         self.file_path = Path(magic_file).parent / filename
@@ -87,12 +97,6 @@ class PromptBuilder:
         }
     
     def create_text_content(text):
-        return {
-            "type": "input_text",
-            "text": text
-        }
-    
-    def create_audio_content(text):
         return {
             "type": "input_text",
             "text": text

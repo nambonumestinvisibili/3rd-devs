@@ -1,0 +1,37 @@
+[
+    {
+        "type": "image",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/rynek.png",
+        "context": "<img src=\"i/rynek.png\"/><figcaption>Orygionalne zdjęcie. Widok na kościół od strony 'Adasia'</figcaption>"
+    },
+    {
+        "type": "image",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/rynek_glitch.png",
+        "context": "<img src=\"i/rynek_glitch.png\"/><figcaption>Uszkodzenia widoczne w odtworzonym pliku graficznym</figcaption>"
+    },
+    {
+        "type": "image",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/fruit01.png",
+        "context": "<img src=\"i/fruit01.png\"/><figcaption>Owoc przed transportem w czasie</figcaption>"
+    },
+    {
+        "type": "image",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/fruit02.png",
+        "context": "<img src=\"i/fruit02.png\"/><figcaption>Owoc pozbawiony pestek po transporcie</figcaption>"
+    },
+    {
+        "type": "image",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/strangefruit.png",
+        "context": "<img src=\"i/strangefruit.png\"/><figcaption>Fuzja kodu genetycznego dwóch transportowanych owoców</figcaption>"
+    },
+    {
+        "type": "image",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/resztki.png",
+        "context": "<img src=\"i/resztki.png\"/><figcaption>Resztki jedzenia znalezione w pobliżu komory temporalnej.<br/>Ciasto było jeszcze ciepłe i chrupiące. Nie dojadł jej do końca.</figcaption>"
+    },
+    {
+        "type": "audio",
+        "url": "https://c3ntrala.ag3nts.org/dane/i/rafal_dyktafon.mp3",
+        "context": "<p>Fuzja na poziomie komórkowym to zjawisko, którego skutki trudno przewidzieć, ale w tym przypadku oznaczałaby mutacje na skalę całego organizmu, co  w skrajnych przypadkachmoże być jednoznaczne ze śmiercią.</p><p> Przeprowadzone symulacje wskazują, że takie zakłócenia mogły wywołać nieodwracalne zmiany strukturalne, które – w najłagodniejszym scenariuszu – prowadzą do głębokich deformacji ciała lub niekontrolowanej reakcji genetycznej. </p><p>Na miejscu zdarzenia znaleziono dyktafon z jednym plikiem dźwiękowym. Nie wiemy dlaczego Bomba przygotowywał nagranie i kto miał być jego odbiorcą.</p><audio controls=\"\">\n<source src=\"i/rafal_dyktafon.mp3\" type=\"audio/mpeg\"/>\n        Twoja przeglądarka nie obsługuje elementu audio.\n    </audio><p><a download=\"\" href=\"i/rafal_dyktafon.mp3\">rafal_dyktafon.mp3</a></p><p>Istniała realna obawa, że incydent ten zakończył się śmiercią Bomby lub że w najlepszym razie przemieścił się on w czasie w formie organizmu, który nie przypomina już swojego pierwowzoru. Incydent ten stanowi ostrzeżenie dla zespołu badawczego i podkreśla potrzebę ścisłej kontroli nad procesem transmisji temporalnej oraz wyeliminowania ryzyka przypadkowej fuzji obiektów. </p><h2>Podniesienie poziomu bezpieczeństwa w laboratorium: nowe procedury i zabezpieczenia</h2>"
+    }
+]
