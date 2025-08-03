@@ -4,8 +4,6 @@ import sys
 parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(parent_dir)
 
-# from OpenAIService import HttpService
-import globals
 from OpenAIService import OpenAiService, read_json, FileLocation
 
 data = read_json(__file__, 'all-facts.json')

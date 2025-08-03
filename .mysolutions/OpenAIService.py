@@ -45,7 +45,12 @@ class FileLocation:
     def get_extension(self):
         return self.file_path.suffix
 
-class OpenAiService:    
+class OpenAiService:
+    def create_client():
+        return openai.OpenAI(
+            api_key=globals.openapi_api_key
+        )        
+
     def get_openai_completion(prompt, model="o4-mini", max_tokens=100, temperature=0.7) -> str:
         try:
             client = openai.OpenAI(
