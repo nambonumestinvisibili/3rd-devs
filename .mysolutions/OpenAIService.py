@@ -64,7 +64,7 @@ class OpenAiService:
                 # temperature=temperature,
             )
 
-            print(json.dumps(json.loads(response.json()), indent=2))
+            # print(json.dumps(json.loads(response.json()), indent=2))
             return response.output_text
         
         except openai.APIConnectionError as e:
