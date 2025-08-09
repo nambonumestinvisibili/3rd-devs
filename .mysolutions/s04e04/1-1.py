@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
-import LocationService
+from LocationService import find_location 
 
 class RequestHandler(BaseHTTPRequestHandler):
   def do_POST(self):
@@ -8,15 +8,19 @@ class RequestHandler(BaseHTTPRequestHandler):
       content_length = int(self.headers.get('Content-Length', 0))
       body = self.rfile.read(content_length)
       data = json.loads(body)
-      query = data.get('query', '')
-      service = LocationService()
+      query = data.get('instruction', '')
+      print("query below:")
+      print(query)
 
-      result = service.find_location(query)
-      
+      result = find_location(query)
+      print(result)
+
       self.send_response(200)
       self.send_header('Content-Type', 'application/json')
       self.end_headers()
-      self.wfile.write(json.dumps(result).encode())
+      # self.wfile.write(json.dumps(result).encode())
+      self.wfile.write(result.encode('utf-8'))
+
     else:
       self.send_response(404)
       self.end_headers()

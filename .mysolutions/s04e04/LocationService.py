@@ -11,12 +11,14 @@ sys.path.append(parent_dir)
 from globals import aidevs_api_key, models
 from OpenAIService import OpenAiService, HttpService
 import requests
-from bs4 import BeautifulSoup
 
 prompt = """Jesteś nawigatorem, który świetnie zna teren i potrafi na podstawie mapy stwierdzić w jakim miejscu się znajduje dron.
 Korsystasz z mapy i legendy i instrukcji drona gdzie poleciał.
 Punktem startowym drona jest zawsze lewy górny róg - punkt startowy s.
-Odpowiedz maksymalnie dwoma słowami. 
+Odpowiedz maksymalnie jednym lub dwoma słowami. 
+Format odpowiedzi: {{
+  "description": "dwa slowa"
+}}
 
 <instrukcja drona>
 {drone_instruction}
@@ -42,6 +44,8 @@ g - grota
 </legenda>
 """
 
-def find_location():
-  airesponse = OpenAiService.get_openai_completion(prompt)
+def find_location(query):
+  print(query)
+  airesponse = OpenAiService.get_openai_completion(prompt.format(drone_instruction=query))
+  print(airesponse)
   return airesponse
